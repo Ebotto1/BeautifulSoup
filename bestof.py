@@ -56,3 +56,4 @@ with open("best of food.csv","w") as file:
  writer = csv.writer(file)
  for var in zip(category_data_string.split(","), winner_data_string.replace("["," ").split("]"), runnerup_data_string.replace("["," ").split("]"), category_link_data_string.split(",")):
   writer.writerow(var)
+
